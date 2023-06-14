@@ -1,0 +1,62 @@
+{% extends "layout.html"%} {%block head%}
+<link rel="stylesheet" href="/static/css/profile-page.css" />
+{%endblock%} {%block body%} {% if user%}
+<div class="custom-wrapper">
+  <div class="profile-container">
+    <div class="user-icon-container">
+      <i class="bi bi-person-circle user-icon"></i>
+      <div class="profile-title">{{user.fname}} {{user.lname}}</div>
+    </div>
+    <div class="profile-content-wrapper">
+      <div class="reminder-msg-hide" id="reminder-status-msg">
+        You are successfully changed your reminder to practise vocabulary
+        notification
+      </div>
+      <div class="info-line">
+        <div class="info-line-title">Email:</div>
+        <div>{{user.email}}</div>
+      </div>
+      <form action="/profile" method="post" class="reminder-container">
+        <div class="info-line">
+          <div class="info-line-title">Daily reminder:</div>
+          <div>
+            <label class="switch">
+              {% if user.send_reminder %}
+              <input
+                type="checkbox"
+                name="reminder_status"
+                id="reminder_status"
+                class="reminder-checkbox"
+                checked
+              />
+              {%else%}
+              <input
+                type="checkbox"
+                name="reminder_status"
+                id="reminder_status"
+                class="reminder-checkbox"
+              />
+              {% endif %}
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="subtitle">
+          Set up a daily reminder to be sent to your email. You can easily
+          unsubscribe by using the toggle button whenever you want
+        </div>
+        <button
+          type="submit"
+          class="reminder-toglle custom-btn"
+          id="toggle-reminder"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endif %} {%endblock%} {%block script%}
+<script src="/static/js/profile.js"></script>
+{%endblock%}

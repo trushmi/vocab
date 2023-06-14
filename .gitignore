@@ -1,0 +1,5 @@
+hbacademy
+secrets
+*.sh
+.DS_Store
+.env

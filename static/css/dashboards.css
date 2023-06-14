@@ -1,0 +1,49 @@
+@import "variables.css";
+
+.dashboards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.edit-form {
+  display: none;
+}
+
+.editing .edit-form {
+  display: block;
+  width: 100%;
+}
+
+.editing .card-header,
+.editing .card-right,
+.editing .card-buttons {
+  display: none;
+}
+
+.dashboard-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dashboard-form-inputs {
+  display: flex;
+  align-items: center;
+}
+.dashboard-link {
+  text-decoration: none;
+}
+.add-icon-btn {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  font-size: 40px;
+  opacity: 0.8;
+  text-decoration: none;
+  display: block;
+  color: var(--brand-color);
+  cursor: pointer;
+  font-weight: bold;
+}

@@ -1,0 +1,9 @@
+{% extends "layout.html"%} {%block head%} {{ super() }}
+<link rel="stylesheet" href="/static/css/guess-word.css" />
+{%endblock%} {%block body%}
+<div id="guessWordPage"></div>
+
+{%endblock%} {%block script%}
+<script src="/static/js/WordToGuess.jsx" type="text/jsx"></script>
+<script src="/static/js/GuessWordPage.jsx" type="text/jsx"></script>
+{%endblock%}

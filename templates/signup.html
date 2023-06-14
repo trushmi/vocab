@@ -1,0 +1,52 @@
+{% extends "layout.html"%} {%block head%}
+{%endblock%} {%block body%}
+
+    <div class="custom-wrapper">
+      <div id="slideshow" class="letters-slideshow"></div>  
+      <form action="/signup" method="post" class="custom-container">
+        <div class="greeting-title ">Register:</div>
+        <input 
+        type="text"  
+        placeholder="First name"
+        id="first_name" 
+        name="first_name" 
+        class="custom-input" 
+        required />
+
+        <input 
+        type="text"
+        placeholder="Last name" 
+        id="last_name" 
+        name="last_name" 
+        class="custom-input" 
+        required 
+        />
+        
+        <input type="email"
+        placeholder="Email" 
+        id="email" 
+        name="email"
+        class="custom-input" 
+        required 
+        />
+
+        <input type="password"
+        placeholder="Password" 
+        id="password" 
+        name="password"
+        class="custom-input" 
+        required  
+        />       
+          <button type="submit" class="custom-btn">Submit</button>
+          <div class="subtitle">Already registered? 
+          <a href="/login">Log in</a>
+        </div>
+        </div>
+      </form>
+    </div>
+
+{%endblock%}
+{%block script%}
+<script src="/static/js/LetterCarousel.js"></script>
+
+{%endblock%}

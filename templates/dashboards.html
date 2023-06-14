@@ -1,0 +1,77 @@
+{% extends "layout.html"%}
+{%block head%}
+{{ super() }}
+<link rel="stylesheet" href="/static/css/dashboards.css" />
+{%endblock%}
+    {%block body%}
+
+    <div class="explanation-title">Add new dashboard:</div>
+    <div class="card add-dashboard-block">
+      <form action="/create-dashboard" method="post" class="dashboard-form">
+        <div class="dashboard-form-inputs">
+          <input type="text" id="dashboard_name" name="dashboard_name" class="dashboard-title" placeholder="Title..." required> 
+         
+          <select name="selected_language" id="selected_language" class="text-input select">
+              <option value="en" >English</option>
+              <option value="es" >Spanish</option>
+              <option value="other" >Other</option>
+          </select>
+        </div>
+        <button type="submit" class="add-icon-btn"><i class="bi bi-plus-circle-fill " ></i></button>
+      </form> 
+    </div>
+    {% if dashboards %}
+    <div id="current_dashboards" class="explanation-title ">Your current list of dashboards:</div>
+    <div id="dashboards-container" class="cards-container">
+
+        {% for dashboard in dashboards %}
+        <div class="card dashboard-card card-tem">
+          <a href="/dashboards/{{dashboard.dashboard_id}}" class="dashboard-link">
+            <h3 class="card-header">
+              {{dashboard.dashboard_title}}
+            </h2>
+          </a>
+            
+          <div class="card-buttons">
+            <a href="/dashboards/{{dashboard.dashboard_id}}" class="icon-btn">
+              <i class="bi bi-eye"></i>
+            </a>
+            <button type="button" class="icon-btn edit-btn" onclick="onEditClick(event)">
+              <i class="bi bi-pencil"></i>
+            </button>
+            <form action="/delete-dashboard" method="post">
+              <input type="hidden" value="{{dashboard.dashboard_id}}" name="dashboard_id"/>
+              <button type="submit" class="icon-btn">
+                <i class="bi bi-trash-fill"></i>
+              </button>
+            </form>
+          </div>
+          <div class="edit-form">
+              <form action="/edit-dashboard" method="post" class="dashboard-form">
+                <div class="dashboard-form-inputs">
+                  <input type="text"  name="new_title" placeholder="New title" value="{{dashboard.dashboard_title}}" class="text-input">
+                  <input type="hidden" value="{{dashboard.dashboard_id}}" name="dashboard_id"/>
+                  <select name="selected_language" id="selected_language" value="{{dashboard.language}}" class="text-input select">
+                      {%for option in supported_languages %}
+                          {% if option.value == dashboard.language %}
+                              <option value="{{option.value}}" selected>{{option.label}}</option>
+                          {% else %}
+                              <option value="{{option.value}}">{{option.label}}</option> 
+                          {% endif %}       
+                      {% endfor %}
+                  </select>
+                </div>
+                <button type="submit" class="icon-btn"><i class="bi bi-check2"></i></button>
+              </form>
+          </div>
+        </div>
+        {% endfor %}
+  
+    </div>
+    {% endif %}
+
+    {%endblock%}
+
+    {%block script%}
+    <script src="/static/js/dashboards.js"></script> 
+    {%endblock%}

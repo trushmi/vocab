@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {%block head%} {%endblock%}
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/static/css/layout.css" />
+    <link rel="stylesheet" href="/static/css/reset.css" />
+    <title>Vocab</title>
+  </head>
+  <body
+    style="
+      background: linear-gradient(to right, rgba(223, 205, 250, 255), #bda2f4);
+    "
+  >
+    <nav class="navbar">
+      <div class="main-container navbar-wrapper">
+        <a class="logo" href="/">VOCAB</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+        </button>
+
+        <div class="navbar-content" id="navbarCollapse">
+          <ul class="navbar-list">
+            {%if "id" in session%}
+            <li class="nav-item">
+              <a class="nav-link" href="/dashboards">Dashboards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/flashcards">Flashcards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/guessWordPage">Guess word</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">My Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout"> Log out </a>
+            </li>
+            {%else%}
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">Sign up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Log in</a>
+            </li>
+            {%endif%}
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% for msg in get_flashed_messages() %}
+    <h1 class="flash-msg" id="msg-item">
+      <div>{{msg}}</div>
+      <button id="msg-btn" class="flash-message-button">
+        <i class="bi bi-x"></i>
+      </button>
+    </h1>
+
+    {% endfor %}
+    <div class="main-container full-screen">{%block body%} {%endblock%}</div>
+
+    {%block script%} {%endblock%}
+
+    <script src="/static/js/layout.js"></script>
+    <div class="footer">
+      <div>
+        Made with
+        <span class="heart-icon"><i class="bi bi-heart-fill"></i></span>
+        Iryna Trush
+      </div>
+      <div class="github-icon-container">
+        <a href="https://github.com/trushmi"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </body>
+</html>

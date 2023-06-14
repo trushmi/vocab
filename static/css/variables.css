@@ -1,0 +1,8 @@
+:root {
+  --primary-color: white;
+  --primary-color-diff-white: #f6f5f7;
+  --main-color: black;
+  --brand-color: #6f42c1;
+  --shadow-color: grey;
+  --custom-box-shadow: rgba(0, 0, 0, 0.12);
+}

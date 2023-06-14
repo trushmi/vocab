@@ -1,0 +1,129 @@
+{% extends "layout.html"%}
+{%block head%} {{ super() }}
+<link rel="stylesheet" href="/static/css/dashboard.css" />
+{%endblock%}
+
+  {%block body%}
+    <input
+      type="hidden"
+      value="{{dashboard.language}}"
+      name="language"
+      id="language"
+    />
+    <input
+      type="hidden"
+      value="{{spanish_key}}"
+      name="spanishKey"
+      id="spanishKey"
+    />
+    <div class="add-word-form-wrapper">
+
+    </div>
+    <form
+      id="findWordId"
+      action="/add-word/{{dashboard.dashboard_id}}"
+      method="post"
+    >
+      <div class="explanation-title">Add words to dashboard:</div>
+      <div class="add-words-wrapper">
+        <div class="add-word-container">
+          <div class="add-word-title-description">Word:</div>
+          <input
+            class="add-word-input"
+            type="text"
+            id="word"
+            name="word"
+            placeholder=""
+            required
+          >
+          </input>
+        </div>
+        <div class="add-word-container">
+          <div class="add-word-title-description">Meaning:</div>
+          <div class="no-show-block" id="msq">Couldn't find a match. Please provide your own definition</div>
+          <div class="text-area-with-button-wrapper">
+            <textarea
+            id="defintion"
+            name="definition"
+            class="add-definition"
+            placeholder="Write or generate.... "
+            required
+            rows="8"
+          ></textarea>
+          <input type="hidden" name="audio" id="audio-url" />
+          {% if dashboard.language == "en" or dashboard.language == "es" %}
+          <button
+            id="generate-definition"
+            type="button"
+            class="generate-definiton-btn btn-with-icon"
+            > 
+              <div>Generate meaning</div>
+              <div class="icon-in-btn"><i class="bi bi-arrow-clockwise"></i></div>
+          </button>
+          {% endif %}   
+          </div>
+            
+        </div>
+        <div class="add-word-container">
+          <button type="submit" class="add-word-btn btn-with-icon">
+            Add
+          </button>
+        </div>
+      
+      </div>
+    </form>
+    <div class="explanation-title">Your current list of words:</div>
+    <div id="dashboard-container">
+      <div class="words-table">
+        <div class="table-row table-header-row">
+          <div class="table-width-2 table-cell">Word</div>
+          <div class="table-width-4 table-cell">Meaning</div>
+          <div class="table-width-3 table-cell">Audio</div>
+          <div class="table-width-1 table-cell">Actions</div>
+        </div>
+        {% for word in dashboard.words %}
+        <div class="table-row">
+          <div class="table-width-2 table-cell">{{word.term}}</div>
+          <div class="table-width-4 table-cell">
+            {{word.definition}}
+            <div class="edit-form" style="display: none">
+              <form
+                action="/edit-definition/{{dashboard.dashboard_id}}"
+                method="post"
+              >
+                <input
+                  type="text"
+                  name="new_definition"
+                  placeholder="New definition"
+                />
+                <input type="hidden" value="{{word.word_id}}" name="word_id" />
+                <button type="submit">Save</button>
+              </form>
+            </div>
+          </div>
+          <div class="table-width-3 table-cell">
+            {% if word.audio %}
+            <audio name="audio" controls src="{{word.audio}}"></audio>
+            {% endif %}
+          </div>
+          <div class="table-width-1 table-cell">
+            <!-- <button type="button" class="toggle-button list-btn">
+              Edit description
+            </button> -->
+            <form action="/delete-word/{{dashboard.dashboard_id}}" method="post">
+              <input type="hidden" value="{{word.word_id}}" name="word_id" />
+              <button type="submit" class="list-btn">
+                <i class="bi bi-trash"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+    </div>
+    {%endblock%}
+  
+  {%block script%}
+  <script src="/static/js/dashboard.js"></script>
+  {%endblock%}

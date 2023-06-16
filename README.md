@@ -1,7 +1,7 @@
 ### About project:
 
-Vocab is a full stack application that helps learn new words faster and easier while keeping them organized in one place.
-When a user visits the website, they can create an account, log in, and start creating their own dashboards.
+Vocab is a full stack application that helps to learn new words faster and easier while keeping them organized in
+one place. When a user visits the website, they can create an account, log in, and start creating their own dashboards.
 They have access to all the dashboards associated with their account and can edit dashboard details, such as the name and language. Furthermore, users can navigate to a specific dashboard and begin adding words to it. To assist in this process, there is a special "generate functionality" that provides word definitions and audio pronunciations.
 "generate functionality" supports two languages right now: English and spanish.
 
@@ -11,32 +11,33 @@ Users can navigate to the "Profile" page, where they have the option to set up a
 
 ### Tech Stack
 
-Python,
-Flask,
-HTML,
-CSS,
-Jinja,
-Javascript
-PostgreSQL,
-SQLAlchemy
+- Python
+- Flask
+- HTML
+- CSS
+- Jinja
+- Javascript
+- ReactJS
+- PostgreSQL
+- SQLAlchemy
 
 ### API:
 
-https://dictionaryapi.dev/
-https://dictionaryapi.com/products/api-spanish-dictionary
+- https://dictionaryapi.dev/
+- https://dictionaryapi.com/products/api-spanish-dictionary
 
 ### Features
 
-Create account
-Log in,Log out
-Create dashboards and select language of dashboard
-Edit dashboard title and language
-Delete dashboard
-Add word to selected dashboard
-Delete word from dashboard
-Daily reminder to practice vocabulary on the email
-Practice words with flashcards from the selected dashboard
-Game “Guess the word” to practice words from certain dashboard and to guess random word by provided definition
+- Create account
+- Log in,Log out
+- Create dashboards and select language of dashboard
+- Edit dashboard title and language
+- Delete dashboard
+- Add word to selected dashboard
+- Delete word from dashboard
+- Daily reminder to practice vocabulary on the email
+- Practice words with flashcards from the selected dashboard
+- Game “Guess the word” to practice words from certain dashboard and to guess random word by provided definition
 
 ### How to Run
 
@@ -52,8 +53,6 @@ To begin, clone this repository to your local machine.
     $ pip3 install -r requirements.txt
 
 4.  Setup shell script for environment variables by writing this in secrets.sh:
-
-        NOTE: don’t forget to add .gitignore file to preserve privacy
 
     export PASSWORD="your_password_to_gmail_here"
     export EMAIL=”your_email_to_send_reminders_to_user_here”
@@ -83,9 +82,9 @@ To begin, clone this repository to your local machine.
 
 ### Demo
 
-Click here[https://www.youtube.com/watch?v=iPlAV7c3YMI] to view the demo video
+[Click here](https://www.youtube.com/watch?v=iPlAV7c3YMI) to view the demo video
 
 ### Author
 
 Iryna Trush, Software engineer with a strong background in the media industry and leadership.
-LinkedIn[https://www.linkedin.com/in/trushmi/], email[trushmi415@gmail.com];
+[LinkedIn](https://www.linkedin.com/in/trushmi/), [email](trushmi415@gmail.com);

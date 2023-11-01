@@ -1,4 +1,4 @@
-# ABOUT VOCAB
+# VOCAB
 
 VOCAB is a full-stack language learning application that enables users to look up and record new words 43% faster, making the learning process 1.77 times quicker. It offers multiple dashboards for organizing words related to specific topics and interactive features for practice and memorization.
 
@@ -65,64 +65,85 @@ Users can navigate to the "Profile" page, where they have the option to set up a
 If they choose this option, an automated email will be sent to them every day, reminding them to log in to "Vocab" and practice.
 <img width="1664" alt="Screenshot 2023-09-25 at 5 19 56 PM" src="https://github.com/trushmi/vocab/assets/88466266/3e5dbe10-8ba3-4d35-b7e8-6b82a6ef2c10">
 
-# How to Run
+# How to Set Up and Run the Project
 
-To begin, clone this repository to your local machine and navigate to project directory
+1. ### Start by cloning the repository to your local machine:
 
-1.  ### Setup the virtual environment:
+```
+  git clone https://github.com/trushmi/vocab.git
+  cd your-project-directory-name
+```
 
-    ```
-    virtualenv env
-    ```
+2. ### Setup the virtual environment:
 
-2.  ### Activate virtual environment
+   Create a virtual environment to manage your project's dependencies separately:
 
-    ```
-    source env/bin/activate
-    ```
+   ```
+   virtualenv env
+   ```
 
-3.  ### Install all requirements
+3. ### Activate virtual environment
 
-    ```
-    pip3 install -r requirements.txt
-    ```
+   ```
+   source env/bin/activate   # On Windows use `env\Scripts\activate`
+   ```
 
-4.  ### Create secrets.sh
-    Create secrets.sh file in your project directory
-5.  ### Setup shell script for environment variables by writing this in secrets.sh:
-    ```
-    export PASSWORD="your_password_to_gmail_here"
-    export EMAIL=”your_email_to_send_reminders_to_user_here”
-    export SPANISHAPIKEY=”your_API_KEY_to_generate_meaning_in_spanish_here”
-    ```
-6.  ### Run the shell script:
+4. ### Install all requirements
 
-    ```
-    source secrets.sh
-    ```
+   Install the project requirements:
 
-7.  ### Set up the database:
+   ```
+   pip3 install -r requirements.txt
+   ```
 
-    ```
-    create db “name_of_database”
-    ```
+5. ### Configure Environment Variables
 
-8.  ### Run:
+   Create a secrets.sh file in your project directory to store sensitive information:
 
-    ```
-    python3 model.py
-    ```
+6. ### Edit secrets.sh to include the following environment variables:
 
-9.  ### Run the app
+   ```
+   export PASSWORD="your_password_to_gmail_here"
+   export EMAIL=”your_email_to_send_reminders_to_user_here”
+   export SPANISHAPIKEY=”your_API_KEY_to_generate_meaning_in_spanish_here”
+   ```
+
+7. ### Load the environment variables:
+
+```
+source secrets.sh
+```
+
+8. ### Set up the database:
+
+   ```
+   create db “name_of_database”
+   ```
+
+9. ### Set up the database tables:
+
+```
+python3 model.py
+```
+
+10. ### Run the Application
+    Now, start the server:
 
 ```
    python3 server.py
 ```
 
-10. ### Navigate to localhost to access the app and see in the browser
-    ```
-    http://localhost:5000/
-    ```
+10. ### Access the App
+
+        Open your web browser and navigate to the following address to access the app:
+
+            ```
+
+        http://localhost:5000/
+
+            ```
+
+You should now see the application running. If you encounter any issues, please check that all previous steps have been followed correctly.
 
 # Demo
 

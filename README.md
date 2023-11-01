@@ -1,6 +1,6 @@
-##About
+## About
 
-VOCAB is a full-stack language learning application that enables users to look up and record new words 43% faster, making the learning process 1.77 times quicker. It offers multiple dashboards for organizing words related to specific topics and interactive features for practice and memorization
+VOCAB is a full-stack language learning application that enables users to look up and record new words 43% faster, making the learning process 1.77 times quicker. It offers multiple dashboards for organizing words related to specific topics and interactive features for practice and memorization.
 
 <img width="1726" alt="Screenshot 2023-06-14 at 3 13 41 PM" src="https://github.com/trushmi/vocab/assets/88466266/c9a40641-abfc-498d-88fb-66ebf79685db">
 
@@ -57,58 +57,58 @@ If they choose this option, an automated email will be sent to them every day, r
 
 To begin, clone this repository to your local machine and navigate to project directory
 
-1.  Setup the virtual environment:
+1.  # Setup the virtual environment:
 
     ```
     virtualenv env
     ```
 
-2.  Activate virtual environment
+2.  # Activate virtual environment
 
     ```
     source env/bin/activate
     ```
 
-3.  Install all requirements
+3.  # Install all requirements
 
     ```
     pip3 install -r requirements.txt
     ```
 
-4.  Create secrets.sh file in your project directory
-5.  Setup shell script for environment variables by writing this in secrets.sh:
-
+4.  # Create secrets.sh file in your project directory
+5.  # Setup shell script for environment variables by writing this in secrets.sh:
+    ```
     export PASSWORD="your_password_to_gmail_here"
     export EMAIL=”your_email_to_send_reminders_to_user_here”
     export SPANISHAPIKEY=”your_API_KEY_to_generate_meaning_in_spanish_here”
-
-6.  Run the shell script:
+    ```
+6.  # Run the shell script:
 
     ```
     source secrets.sh
     ```
 
-7.  Set up the database:
+7.  # Set up the database:
 
     ```
     create db “name_of_database”
     ```
 
-8.  Run:
+8.  # Run:
 
     ```
     python3 model.py
     ```
 
-9.  Run the app
+9.  # Run the app
 
 ```
    python3 server.py
 ```
 
-10. Navigate to localhost to access the app and see in the browser
+10. # Navigate to localhost to access the app and see in the browser
 
-### How to navigate in the app:
+### How to use the app:
 
 1. Create account or log in
 2. Create dashboard
@@ -126,19 +126,3 @@ To begin, clone this repository to your local machine and navigate to project di
 
 Iryna Trush, Software engineer with a strong background in the media industry and leadership.
 [LinkedIn](https://www.linkedin.com/in/trushmi/), [email](trushmi415@gmail.com);
-
-```
-
-```
-
-```
-
-```
-
-```
-
-```
-
-```
-
-```

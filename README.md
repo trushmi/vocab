@@ -44,7 +44,9 @@ VOCAB is a full-stack language learning application that enables users to look u
 6. Practice words with game “Guess the word”
 7. Set up daily reminder to your email to practise vocabulary
 
-# Application Demonstration::
+# Application Demonstration:
+
+This section provides a visual walkthrough of the application's core features and functionalities. Here's what you can expect once you start using the app:
 
 When a user visits the website, they can create an account, log in, and start creating their own dashboards.
 
@@ -67,81 +69,80 @@ If they choose this option, an automated email will be sent to them every day, r
 
 # How to Set Up and Run the Project
 
-1. ### Start by cloning the repository to your local machine:
+1.  ### Start by cloning the repository to your local machine:
 
-```
-  git clone https://github.com/trushmi/vocab.git
-  cd your-project-directory-name
-```
+    ```
+    git clone https://github.com/trushmi/vocab.git
+    cd your-project-directory-name
+    ```
 
-2. ### Setup the virtual environment:
+2.  ### Setup the virtual environment:
 
-   Create a virtual environment to manage your project's dependencies separately:
+    Create a virtual environment to manage your project's dependencies separately:
 
-   ```
-   virtualenv env
-   ```
+    ```
+    virtualenv env
+    ```
 
-3. ### Activate virtual environment
+3.  ### Activate virtual environment
 
-   ```
-   source env/bin/activate   # On Windows use `env\Scripts\activate`
-   ```
+    ```
+    source env/bin/activate   # On Windows use `env\Scripts\activate`
+    ```
 
-4. ### Install all requirements
+4.  ### Install all requirements
 
-   Install the project requirements:
+    Install the project requirements:
 
-   ```
-   pip3 install -r requirements.txt
-   ```
+    ```
+    pip3 install -r requirements.txt
+    ```
 
-5. ### Configure Environment Variables
+5.  ### Configure Environment Variables
 
-   Create a secrets.sh file in your project directory to store sensitive information:
+    Create a secrets.sh file in your project directory to store sensitive information
 
-6. ### Edit secrets.sh to include the following environment variables:
+6.  ### Edit secrets.sh to include the following environment variables:
 
-   ```
-   export PASSWORD="your_password_to_gmail_here"
-   export EMAIL=”your_email_to_send_reminders_to_user_here”
-   export SPANISHAPIKEY=”your_API_KEY_to_generate_meaning_in_spanish_here”
-   ```
+    ```
+    export PASSWORD="your_password_to_gmail_here"
+    export EMAIL=”your_email_to_send_reminders_to_user_here”
+    export SPANISHAPIKEY=”your_API_KEY_to_generate_meaning_in_spanish_here”
+    ```
 
-7. ### Load the environment variables:
+7.  ### Load the environment variables:
 
-```
-source secrets.sh
-```
+    ```
+    source secrets.sh
+    ```
 
-8. ### Set up the database:
+8.  ### Set up the database:
 
-   ```
-   create db “name_of_database”
-   ```
+    ```
+    create db “name_of_database”
+    ```
 
-9. ### Set up the database tables:
+9.  ### Set up the database tables:
 
-```
-python3 model.py
-```
+    ```
+    python3 model.py
+    ```
 
 10. ### Run the Application
+
     Now, start the server:
 
-```
-   python3 server.py
-```
+    ```
+    python3 server.py
+    ```
 
-10. ### Access the App
+11. ### Access the App
 
         Open your web browser and navigate to the following address to access the app:
 
-            ```
-
-        http://localhost:5000/
-
-            ```
+    ```
+    http://localhost:5000/
+    ```
 
 You should now see the application running. If you encounter any issues, please check that all previous steps have been followed correctly.
 
@@ -153,3 +154,7 @@ You should now see the application running. If you encounter any issues, please 
 
 Iryna Trush, Software engineer with a strong background in the media industry and leadership.
 [LinkedIn](https://www.linkedin.com/in/trushmi/), [email](trushmi415@gmail.com);
+
+```
+
+```

@@ -118,15 +118,17 @@ If they choose this option, an automated email will be sent to them every day, r
 
 8.  ### Set up the database:
 
-    ```
-    create db “name_of_database”
-    ```
+        ```
+        createdb “name_of_database”
+        ```
+
+    If the database is created successfully, you should see the following message in your terminal: "You are connected to the database.
 
 9.  ### Set up the database tables:
 
-    ```
-    python3 model.py
-    ```
+        ```
+        python3 model.py
+        ```
 
 10. ### Run the Application
 
@@ -154,7 +156,131 @@ You should now see the application running. If you encounter any issues, please 
 
 Iryna Trush, Software engineer with a strong background in the media industry and leadership.
 [LinkedIn](https://www.linkedin.com/in/trushmi/), [email](trushmi415@gmail.com);
+@import "variables.css";
 
-```
+.user-icon-container {
+margin: 0 auto;
+background: var(--brand-color);
+height: 150px;
+width: 100%;
+padding: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.user-icon {
+font-size: 42px;
+color: var(--primary-color);
+margin-bottom: 10px;
+}
 
-```
+.profile-container {
+width: 100%;
+margin: 0 auto;
+max-width: 400px;
+background-color: var(--primary-color);
+border-radius: 10px;
+height: 550px;
+font-weight: 200;
+font-size: 16px;
+box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
+overflow: hidden;
+}
+.profile-title {
+font-size: 24px;
+font-weight: 300;
+display: flex;
+justify-content: center;
+color: var(--primary-color);
+}
+.user-first-last-name {
+width: 100%;
+padding: 0 2rem 0.5rem;
+margin-top: 20px;
+font-size: 24px;
+}
+
+.info-line {
+display: flex;
+margin: 30px 0;
+justify-content: center;
+align-items: center;
+}
+.info-line-title {
+margin-right: 10px;
+font-weight: bold;
+}
+
+.profile-content-wrapper {
+margin-top: 30px;
+padding: 20px;
+text-align: center;
+}
+
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #c4bebe;
+transition: 0.4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: var(--primary-color);
+transition: 0.4s;
+}
+
+input:checked + .slider {
+background-color: #bda2f4;
+box-shadow: 0 0 1px #bda2f4;
+}
+
+input:checked + .slider:before {
+transform: translateX(26px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+.reminder-status-msg-show {
+background-color: #ddf4ff;
+border: 1px solid #91b5de;
+color: black;
+padding: 15px;
+border-radius: 3px;
+position: fixed;
+z-index: 1;
+top: 10px;
+display: block;
+}
+.reminder-msg-hide {
+display: none;
+}

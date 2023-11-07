@@ -20,12 +20,11 @@
 .profile-container {
   width: 100%;
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 380px;
   background-color: var(--primary-color);
   border-radius: 10px;
   height: 550px;
   font-weight: 200;
-  font-size: 16px;
   box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
@@ -97,9 +96,6 @@
 
 input:checked + .slider {
   background-color: #bda2f4;
-}
-
-input:focus + .slider {
   box-shadow: 0 0 1px #bda2f4;
 }
 

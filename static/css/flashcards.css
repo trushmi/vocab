@@ -38,6 +38,120 @@
   width: 520px;
   height: 300px;
 }
+@import "variables.css";
+
+.select-flashcard-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flashcards-container {
+  padding-top: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 8px;
+  padding: 30px;
+  height: calc(100% - 50px);
+}
+
+.flash-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flash-card {
+  display: block;
+  border-radius: 8px;
+  background: var(--primary-color);
+  box-shadow: 10px 10px 5px 0px rgba(77, 75, 75, 0.75);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  max-width: 100%;
+  width: 520px;
+  height: 300px;
+}
+
+.flash-card-wrapper {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.flash-card-outline .flash-card {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.card-front,
+.card-back,
+.invisible-word,
+.invisible-definition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  padding: 20px 30px;
+  position: absolute;
+  inset: 0;
+  word-break: break-all;
+}
+
+.card-front {
+  color: var(--main-color);
+  font-size: 50px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  font-size: 18px;
+}
+
+.invisible-word,
+.invisible-definition {
+  visibility: hidden;
+  font-size: 50px;
+}
+
+/* change cards btns */
+
+.toggle-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 250px;
+  margin-top: 40px;
+}
+
+.btn-toggle-card {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  border-radius: 3px;
+  padding: 9px 10px;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--brand-color);
+}
+
+@media screen and (max-width: 720px) {
+  .flash-card {
+    width: 445px;
+  }
+}
 
 .flash-card-wrapper {
   cursor: pointer;

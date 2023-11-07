@@ -5,7 +5,7 @@
 {%endblock%}
     {%block body%}
 
-    <div class="explanation-title">Add new dashboard:</div>
+    <div class="explanation-title">Create a new vocabulary:</div>
     <div class="card add-dashboard-block">
       <form action="/create-dashboard" method="post" class="dashboard-form">
         <div class="dashboard-form-inputs">
@@ -21,7 +21,7 @@
       </form> 
     </div>
     {% if dashboards %}
-    <div id="current_dashboards" class="explanation-title ">Your current list of dashboards:</div>
+    <div id="current_dashboards" class="explanation-title ">Your current list of vocabularies:</div>
     <div id="dashboards-container" class="cards-container">
 
         {% for dashboard in dashboards %}

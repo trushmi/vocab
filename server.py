@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, flash, session, redirect, url_for, jsonify, json
 
 import os
-
+from gtts import gTTS
+from langdetect import detect
 from model import connect_to_db
 import crud
 import reminder_scheduler
@@ -142,7 +143,13 @@ def add_word(dashboard_id):
         word = request.form.get("word")
         definition = request.form.get("definition")
         audio = request.form.get("audio")
+        
         if word and user_id:
+            # language = detect(word)
+            # tts = gTTS(text=word, lang=language)
+            # audio_path = f"audio_files/{word}_{dashboard_id}.mp3"
+            # tts.save(audio_path)
+            # word_entry = crud.create_word(word, definition, audio_path, dashboard_id)
             word = crud.create_word(word, definition, audio, dashboard_id)
             return redirect(url_for("show_dashboard", dashboard_id=dashboard_id))
 

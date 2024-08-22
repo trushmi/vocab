@@ -157,9 +157,6 @@ If the database is created successfully, you should see the following message in
 
 You should now see the application running. If you encounter any issues, please check that all previous steps have been followed correctly.
 
-# Demo
-
-[Click here](https://www.youtube.com/watch?v=iPlAV7c3YMI) to view the demo video
 
 # Author
 

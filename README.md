@@ -155,13 +155,9 @@ If the database is created successfully, you should see the following message in
     http://localhost:5000/
     ```
 
-You should now see the application running. If you encounter any issues, please check that all previous steps have been followed correctly.
+You should now see the application running. 
 
+If you encounter any issues, please check that all previous steps have been followed correctly.
 
-# Author
-
-Iryna Trush, Software engineer with a strong background in communications. Gained a solid foundation in full-stack web development, data structures, and algorithms during studies at Hackbright Academy. Leverages a unique background in communications to create user-centric digital solutions. Passionate about blending technical knowledge with storytelling to drive engagement and user experience
-
-[LinkedIn](https://www.linkedin.com/in/trushmi/), [email](trushmi415@gmail.com);
 
 

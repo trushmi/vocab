@@ -43,25 +43,35 @@ VOCAB is a full-stack language learning application that enables users to look u
 - Generated definition and audio pronunciations for words
 
 # How to use the app:
-* Create account or log in:
+### 1. Create an account or log in
+- On the sign-in page, enter your credentials to access the app.
+
 <img width="1726" alt="The sign-in page where users enter their credentials to access the app." src="https://github.com/trushmi/vocab/assets/88466266/c9a40641-abfc-498d-88fb-66ebf79685db">
 
-* Navigate to the dashboards page and create a new dashboard, specifying the title and language:
-<img width="1850" alt="The dashboards page displaying various categories of words organized by topic." src="https://github.com/trushmi/vocab/assets/88466266/76c67b80-3af2-4201-86de-9ab8b46ec772">
+### 2. Navigate to the dashboards page
+- Once logged in, go to the dashboards page.
+- Click on the option to create a new dashboard, specifying the title and language for your dashboard.
+- See your current list of dashboards.
+<img width="1726" alt="The dashboards page displaying various categories of words organized by topic." src="https://github.com/trushmi/vocab/assets/88466266/76c67b80-3af2-4201-86de-9ab8b46ec772">
 
-* Navigate to selected dashboard. Add words to the dashboard:
+### 3. Navigate to the selected dashboard
+- Add words to your dashboard by typing the word in the corresponding field and pressing the "Generate Meaning" button to get the description and audio pronunciation of the word. Then, press the "Add" button to include it in your dashboard.
 
-<img width="1684" alt="A selected dashboard with fields to search for a word, its meaning, and a button to add the word. Below, a list of saved words is displayed with audio playback functionality." src="https://github.com/trushmi/vocab/assets/88466266/c39e1528-e431-43e9-a87a-a4ab8612ccaf">
+<img width="1726" alt="A selected dashboard with fields to search for a word, its meaning, and a button to add the word. Below, a list of saved words is displayed with audio playback functionality." src="https://github.com/trushmi/vocab/assets/88466266/c39e1528-e431-43e9-a87a-a4ab8612ccaf">
 
-* Practice words with flashcards:
-<img width="1850" alt="Flashcards page." src="https://github.com/trushmi/vocab/assets/88466266/7f74bbb0-3dbf-4237-b45d-2d867ad3e64f">
+### 4. Practice words with flashcards
+- Use the flashcards feature to reinforce your vocabulary.
+<img width="1726" alt="Flashcards page." src="https://github.com/trushmi/vocab/assets/88466266/7f74bbb0-3dbf-4237-b45d-2d867ad3e64f">
 
-* Practice words with “Guess the word” game:
-<img width="1849" alt="Guess the word page." src="https://github.com/trushmi/vocab/assets/88466266/6a2d7f2d-6a05-49f6-8408-04127fe8cba3">
+### 5. Play the “Guess the Word” game
+- Test your knowledge with the "Guess the word" game.
+<img width="1726" alt="Guess the word page." src="https://github.com/trushmi/vocab/assets/88466266/6a2d7f2d-6a05-49f6-8408-04127fe8cba3">
 
-* Set up daily email reminder to practice:
-<img width="1847" alt="Profile page where the user can toggle the button to set up or cancel a daily reminder to practice vocabulary." src="https://github.com/trushmi/vocab/assets/88466266/7039bba6-a0b6-4aeb-bfd2-42815ab9cc77">
-<img width="1664" alt="Screenshot of a Gmail inbox where messages to practice vocabulary are displayed" src="https://github.com/trushmi/vocab/assets/88466266/3e5dbe10-8ba3-4d35-b7e8-6b82a6ef2c10">
+### 6. Set up daily email reminders to practice
+- Navigate to your profile page to configure daily email reminders for practicing vocabulary.
+<img width="1726" alt="Profile page where the user can toggle the button to set up or cancel a daily reminder to practice vocabulary." src="https://github.com/trushmi/vocab/assets/88466266/7039bba6-a0b6-4aeb-bfd2-42815ab9cc77">
+
+<img width="1726" alt="Screenshot of a Gmail inbox where messages to practice vocabulary are displayed" src="https://github.com/trushmi/vocab/assets/88466266/3e5dbe10-8ba3-4d35-b7e8-6b82a6ef2c10">
 
 
 # How to run the app:  

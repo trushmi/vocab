@@ -1,12 +1,12 @@
-# In this ReadMe:
-* About this project 
-* Tech stack
-* Features 
-* Code samples 
-* How to use the app 
-* How to run the app
+### In this ReadMe:
+- [About this project](#about-this-project)
+- [Tech stack](#tech-stack)
+- [Features](#features)
+- [Code samples](#code-samples)
+- [How to use the app](#how-to-use-the-app)
+- [How to run the app](#how-to-run-the-app)
 
-# About 
+# About this project 
 VOCAB is a full-stack language learning application that enables users to look up and record new words 43% faster, making the learning process 1.77 times quicker. It offers multiple dashboards for organizing words related to specific topics and interactive features for practice and memorization.
 ![Green and Black Modern Sales Marketing Presentation (2)](https://github.com/trushmi/vocab/assets/88466266/576ce556-45a6-42bb-a7d2-56f7dbff6cb7)
 

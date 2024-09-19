@@ -1,23 +1,16 @@
-# VOCAB
+# In this ReadMe:
+* About this project 
+* Tech stack
+* Features 
+* Code samples 
+* How to use the app 
+* How to run the app
+
+# About 
+VOCAB is a full-stack language learning application that enables users to look up and record new words 43% faster, making the learning process 1.77 times quicker. It offers multiple dashboards for organizing words related to specific topics and interactive features for practice and memorization.
 ![Green and Black Modern Sales Marketing Presentation (2)](https://github.com/trushmi/vocab/assets/88466266/576ce556-45a6-42bb-a7d2-56f7dbff6cb7)
 
-VOCAB is a full-stack language learning application that enables users to look up and record new words 43% faster, making the learning process 1.77 times quicker. It offers multiple dashboards for organizing words related to specific topics and interactive features for practice and memorization.
-
-
-## Features
-
-- Create account
-- Log in,Log out
-- Create dashboards and select language of dashboard
-- Edit dashboard title and language
-- Delete dashboard
-- Add word to selected dashboard
-- Delete word from dashboard
-- Daily reminder to practice vocabulary on the email
-- Practice words with flashcards from the selected dashboard
-- Game “Guess the word” to practice words from certain dashboard and to guess random word by provided definition
-
-### Tech Stack
+# Tech Stack
 
 - Python
 - Flask
@@ -28,11 +21,19 @@ VOCAB is a full-stack language learning application that enables users to look u
 - ReactJS
 - PostgreSQL
 - SQLAlchemy
-
-### API:
-
+    ### API used:
 - https://dictionaryapi.dev/
 - https://dictionaryapi.com/products/api-spanish-dictionary
+- 
+# Features
+
+- User authentication
+- Daily reminders to practice
+- Flashcards
+- Support 2 languages: English and Spanish
+- Interactive game “Guess the word” by definition
+- Multiple dashboards to keep words organized
+- Generated definition and audio pronunciations for words
 
 # How to use the app:
 

@@ -8,7 +8,7 @@
 
 # About this project 
 VOCAB is a full-stack language learning application that enables users to look up and record new words 43% faster, making the learning process 1.77 times quicker. It offers multiple dashboards for organizing words related to specific topics and interactive features for practice and memorization.
-![Green and Black Modern Sales Marketing Presentation (2)](https://github.com/trushmi/vocab/assets/88466266/576ce556-45a6-42bb-a7d2-56f7dbff6cb7)
+![Screenshot of two pages of the app: sign in and dashboards page displayed on one slide](https://github.com/user-attachments/assets/a960fe96-fa66-4850-8aea-8029b78ece20)
 
 # Tech Stack
 
@@ -37,24 +37,24 @@ VOCAB is a full-stack language learning application that enables users to look u
 
 # How to use the app:
 * Create account or log in:
-<img width="1726" alt="Screenshot 2023-06-14 at 3 13 41 PM" src="https://github.com/trushmi/vocab/assets/88466266/c9a40641-abfc-498d-88fb-66ebf79685db">
+<img width="1726" alt="The sign-in page where users enter their credentials to access the app." src="https://github.com/trushmi/vocab/assets/88466266/c9a40641-abfc-498d-88fb-66ebf79685db">
 
 * Navigate to the dashboards page and create a new dashboard, specifying the title and language:
-<img width="1850" alt="Screenshot 2023-06-14 at 3 24 23 PM" src="https://github.com/trushmi/vocab/assets/88466266/76c67b80-3af2-4201-86de-9ab8b46ec772">
+<img width="1850" alt="The dashboards page displaying various categories of words organized by topic." src="https://github.com/trushmi/vocab/assets/88466266/76c67b80-3af2-4201-86de-9ab8b46ec772">
 
 * Navigate to selected dashboard. Add words to the dashboard:
 
-<img width="1684" alt="Screenshot 2023-09-25 at 5 17 59 PM" src="https://github.com/trushmi/vocab/assets/88466266/c39e1528-e431-43e9-a87a-a4ab8612ccaf">
+<img width="1684" alt="A selected dashboard with fields to search for a word, its meaning, and a button to add the word. Below, a list of saved words is displayed with audio playback functionality." src="https://github.com/trushmi/vocab/assets/88466266/c39e1528-e431-43e9-a87a-a4ab8612ccaf">
 
 * Practice words with flashcards:
-<img width="1850" alt="Screenshot 2023-06-14 at 3 27 03 PM" src="https://github.com/trushmi/vocab/assets/88466266/7f74bbb0-3dbf-4237-b45d-2d867ad3e64f">
+<img width="1850" alt="Flashcards page." src="https://github.com/trushmi/vocab/assets/88466266/7f74bbb0-3dbf-4237-b45d-2d867ad3e64f">
 
 * Practice words with “Guess the word” game:
-<img width="1849" alt="Screenshot 2023-06-14 at 3 27 14 PM" src="https://github.com/trushmi/vocab/assets/88466266/6a2d7f2d-6a05-49f6-8408-04127fe8cba3">
+<img width="1849" alt="Guess the word page." src="https://github.com/trushmi/vocab/assets/88466266/6a2d7f2d-6a05-49f6-8408-04127fe8cba3">
 
 * Set up daily email reminder to practice:
-<img width="1847" alt="Screenshot 2023-06-14 at 3 28 26 PM" src="https://github.com/trushmi/vocab/assets/88466266/7039bba6-a0b6-4aeb-bfd2-42815ab9cc77">
-<img width="1664" alt="Screenshot 2023-09-25 at 5 19 56 PM" src="https://github.com/trushmi/vocab/assets/88466266/3e5dbe10-8ba3-4d35-b7e8-6b82a6ef2c10">
+<img width="1847" alt="Profile page where the user can toggle the button to set up or cancel a daily reminder to practice vocabulary." src="https://github.com/trushmi/vocab/assets/88466266/7039bba6-a0b6-4aeb-bfd2-42815ab9cc77">
+<img width="1664" alt="Screenshot of a Gmail inbox where messages to practice vocabulary are displayed" src="https://github.com/trushmi/vocab/assets/88466266/3e5dbe10-8ba3-4d35-b7e8-6b82a6ef2c10">
 
 
 # How to run the app:  

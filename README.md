@@ -57,87 +57,62 @@ VOCAB is a full-stack language learning application that enables users to look u
 <img width="1664" alt="Screenshot 2023-09-25 at 5 19 56 PM" src="https://github.com/trushmi/vocab/assets/88466266/3e5dbe10-8ba3-4d35-b7e8-6b82a6ef2c10">
 
 
-# How to Set Up and Run the Project
+# How to run the app:  
+Follow the next 12 steps to set up and run the app on your local machine: 
 
-1.  ### Start by cloning the repository to your local machine:
-
+1. ### Clone the repository to your local machine:
     ```
     git clone https://github.com/trushmi/vocab.git
-    cd your-project-directory-name
     ```
-
-2.  ### Setup the virtual environment:
-
-    Create a virtual environment to manage your project's dependencies separately:
-
+2. ### Navigate to your project directory:
+   ```
+   cd your-project-directory-name
+   ```
+3. ### Setup the virtual environment to manage your project's dependencies separately:
     ```
     virtualenv env
     ```
-
-3.  ### Activate virtual environment
-
+4. ### Activate virtual environment:
     ```
     source env/bin/activate
     ```
 
-4.  ### Install all requirements
-
-    Install the project requirements:
-
+5. ### Install the project requirements:
     ```
     pip3 install -r requirements.txt
     ```
+6. ###  Create a secrets.sh file in your project directory to store sensitive information
 
-5.  ### Configure Environment Variables
-
-    Create a secrets.sh file in your project directory to store sensitive information
-
-6.  ### Edit secrets.sh to include the following environment variables:
-
+7. ### Include the following environment variables into secrets.sh file:
     ```
     export PASSWORD="your_password_to_gmail_here"
     export EMAIL=”your_email_to_send_reminders_to_user_here”
     export SPANISHAPIKEY=”your_API_KEY_to_generate_meaning_in_spanish_here”
     ```
-
-7.  ### Load the environment variables:
-
+8. ### Load the environment variables:
     ```
     source secrets.sh
     ```
-
-8.  ### Set up the database:
-
+9. ### Set up the database:
    ```
    createdb "name_of_database"
    ```
-
-If the database is created successfully, you should see the following message in your terminal: "You are connected to the database.
-
-9.  ### Set up the database tables:
-
+9. ### Set up the database tables:
    ```
    python3 model.py
    ```
-
 10. ### Run the Application
-
-    Now, start the server:
-
     ```
     python3 server.py
     ```
 
-11. ### Access the App
-
-    Open your web browser and navigate to the following address to access the app:
-
+11. ### Open your web browser and navigate to the following address
     ```
     http://localhost:5000/
     ```
 
-You should now see the application running. 
 
+You should now see the application running. 
 If you encounter any issues, please check that all previous steps have been followed correctly.
 
 

@@ -12,19 +12,26 @@ VOCAB is a full-stack language learning application that enables users to look u
 
 # Tech Stack
 
-- Python
-- Flask
+
+### Frontend:
 - HTML
 - CSS
-- Jinja
-- Javascript
+- JavaScript
 - ReactJS
-- PostgreSQL
+
+### Backend:
+- Python
+- Flask
+- Jinja
 - SQLAlchemy
-    ### API used:
-- https://dictionaryapi.dev/
-- https://dictionaryapi.com/products/api-spanish-dictionary
-- 
+
+### Database:
+- PostgreSQL
+  
+### API:
+- [Free Dictionary API](https://dictionaryapi.dev/)
+- [Merriam-Webster Spanish Dictionary API](https://dictionaryapi.com/products/api-spanish-dictionary)
+
 # Features
 
 - User authentication

@@ -83,7 +83,11 @@ App includes interactive features to help users practice and memorize new vocabu
 
 
 # How to run the app:  
+
 Follow the next 12 steps to set up and run the app on your local machine: 
+  
+  > [!NOTE]
+>  To use the Spanish language in this app, navigate to the [Merriam-Webster Spanish Dictionary API](https://dictionaryapi.com/products/api-spanish-dictionary) and generate your API key. 
 
 1. ### Clone the repository to your local machine:
     ```
@@ -107,6 +111,9 @@ Follow the next 12 steps to set up and run the app on your local machine:
     pip3 install -r requirements.txt
     ```
 6. ###  Create a secrets.sh file in your project directory to store sensitive information
+   ```
+   touch secrets.sh
+   ```
 
 7. ### Include the following environment variables into secrets.sh file:
     ```
@@ -122,21 +129,18 @@ Follow the next 12 steps to set up and run the app on your local machine:
    ```
    createdb "name_of_database"
    ```
-9. ### Set up the database tables:
-   ```
-   python3 model.py
-   ```
-10. ### Run the Application
+10. ### Set up the database tables:
+    ```
+    python3 model.py
+    ```
+11. ### Run the Application
     ```
     python3 server.py
     ```
-
-11. ### Open your web browser and navigate to the following address
+12. ### Open your web browser and navigate to the following address:
     ```
     http://localhost:5000/
     ```
-
-
 You should now see the application running. 
 If you encounter any issues, please check that all previous steps have been followed correctly.
 

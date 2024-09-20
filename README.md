@@ -12,7 +12,6 @@ VOCAB is a full-stack language learning application that enables users to look u
 
 # Tech Stack
 
-
 ### Frontend:
 - HTML
 - CSS
@@ -42,6 +41,12 @@ VOCAB is a full-stack language learning application that enables users to look u
 - Multiple dashboards to keep words organized
 - Generated definition and audio pronunciations for words
 
+# Code samples
+- The database model is located [here](https://github.com/trushmi/vocab/blob/main/model.py)
+- The Python code [here](https://github.com/trushmi/vocab/blob/main/server.py)
+- The JavaScript code [here](https://github.com/trushmi/vocab/blob/main/static/js/dashboard.js)
+- The CSS file [here](https://github.com/trushmi/vocab/blob/main/static/css/flashcards.css) 
+- The tests [here](https://github.com/trushmi/vocab/blob/main/test_server.py) 
 # How to use the app:
 ### 1. Create an account or log in
 - On the sign-in page, enter your credentials to access the app.

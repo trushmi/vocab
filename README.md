@@ -1,4 +1,4 @@
-### In this ReadMe:
+# In this ReadMe:
 - [About this project](#about-this-project)
 - [Tech stack](#tech-stack)
 - [Features](#features)
@@ -7,7 +7,10 @@
 - [How to run the app](#how-to-run-the-app)
 
 # About this project 
-VOCAB is a full-stack language learning application that enables users to look up and record new words 43% faster, making the learning process 1.77 times quicker. It offers multiple dashboards for organizing words related to specific topics and interactive features for practice and memorization.
+
+VOCAB is a language learning application that enables users to look up and record new words, making the learning process 1.77 times quicker. It supports two languages and offers multiple dashboards for organizing words related to specific topics. 
+
+App includes interactive features to help users practice and memorize new vocabulary. It also allows users to set up daily email reminders to practice.
 ![Screenshot of two pages of the app: sign in and dashboards page displayed on one slide](https://github.com/user-attachments/assets/a960fe96-fa66-4850-8aea-8029b78ece20)
 
 # Tech Stack

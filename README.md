@@ -45,11 +45,13 @@ App includes interactive features to help users practice and memorize new vocabu
 - Generated definition and audio pronunciations for words
 
 # Code samples
-- The database model is located [here](https://github.com/trushmi/vocab/blob/main/model.py)
-- The Python code [here](https://github.com/trushmi/vocab/blob/main/server.py)
-- The JavaScript code [here](https://github.com/trushmi/vocab/blob/main/static/js/dashboard.js)
-- The CSS file [here](https://github.com/trushmi/vocab/blob/main/static/css/flashcards.css) 
-- The tests [here](https://github.com/trushmi/vocab/blob/main/test_server.py) 
+See the following code samples from this project:
+- [Database model](https://github.com/trushmi/vocab/blob/main/model.py)
+- [Python code](https://github.com/trushmi/vocab/blob/main/server.py)
+- [JavaScript code](https://github.com/trushmi/vocab/blob/main/static/js/dashboard.js)
+- [CSS file](https://github.com/trushmi/vocab/blob/main/static/css/flashcards.css) 
+- [Tests](https://github.com/trushmi/vocab/blob/main/test_server.py) 
+
 # How to use the app:
 ### 1. Create an account or log in
 - On the sign-in page, enter your credentials to access the app.

@@ -52,7 +52,7 @@ See the following code samples from this project:
 - [CSS file](https://github.com/trushmi/vocab/blob/main/static/css/flashcards.css) 
 - [Tests](https://github.com/trushmi/vocab/blob/main/test_server.py) 
 
-# How to use the app:
+# How to use the app
 ### 1. Create an account or log in
 - On the sign-in page, enter your credentials to access the app.
 
@@ -84,7 +84,7 @@ See the following code samples from this project:
 <img width="1726" alt="Screenshot of a Gmail inbox where messages to practice vocabulary are displayed" src="https://github.com/trushmi/vocab/assets/88466266/3e5dbe10-8ba3-4d35-b7e8-6b82a6ef2c10">
 
 
-# How to run the app:  
+# How to run the app  
 
 Follow the next 12 steps to set up and run the app on your local machine: 
   
@@ -146,5 +146,7 @@ Follow the next 12 steps to set up and run the app on your local machine:
 You should now see the application running. 
 If you encounter any issues, please check that all previous steps have been followed correctly.
 
+_________________
 
+See my another [project](https://github.com/trushmi/tv-shows-time) to check how much time you have spent watching TV shows. 
 
